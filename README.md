@@ -3,16 +3,17 @@ Dedicated Docker Repository for equipage Solr instance
 
 ##Deployment to Azure
 ```shell script
-docker login equipage.azurecr.io
-docker build --tag solr:1.0 .
-docker tag solr:1.0 equipage.azurecr.io/solr:v1
-docker push equipage.azurecr.io/solr:v1
+docker login imecint.azurecr.io
+docker build --tag equipage-solr:1.0 .
+docker tag equipage-solr:1.0 imecint.azurecr.io/equipage-solr:v1
+docker push imecint.azurecr.io/equipage-solr:v1
 ```
 
 ##Build package in GitHub
 ```shell script
-cat ~/GH_TOKEN.txt | docker login docker.pkg.github.com -u japaveh --password-stdin
+echo $CR_PAT | docker login ghcr.io -u japaveh --passwrod-stdin
 docker build --tag equipage-solr:1.0 .
-docker tag equipage-solr:1.0 docker.pkg.github.com/jield-webdev/equipage-solr/equipage-solr:latest
-docker push docker.pkg.github.com/jield-webdev/equipage-solr/equipage-solr:latest
+docker tag equipage:develop ghcr.io/jield-webdev/equipage-solr:1.0
+docker push ghcr.io/jield-webdev/equipage-solr:1.0
 ```
+
