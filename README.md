@@ -11,9 +11,10 @@ docker push imecint.azurecr.io/equipage-solr:v1
 
 ##Build package in GitHub
 ```shell script
-echo $CR_PAT | docker login ghcr.io -u japaveh --passwrod-stdin
+docker login ghcr.io -u japaveh
+use ~/GH_TOKEN.txt
 docker build --tag equipage-solr:1.0 .
-docker tag equipage:develop ghcr.io/jield-webdev/equipage-solr:1.0
+docker tag equipage-solr:1.0 ghcr.io/jield-webdev/equipage-solr:1.0
 docker push ghcr.io/jield-webdev/equipage-solr:1.0
 ```
 

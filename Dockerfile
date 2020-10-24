@@ -1,5 +1,6 @@
 FROM solr:8
 LABEL maintainer="info@jield.nl"
+LABEL org.opencontainers.image.source="https://github.com/jield-webdev/equipage-solr/solr"
 
 ADD solr/chemical /opt/solr/server/solr/configsets/chemical
 ADD solr/chemical_container /opt/solr/server/solr/configsets/chemical_container
