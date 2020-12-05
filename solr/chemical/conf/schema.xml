@@ -43,19 +43,24 @@
     <field name="room_id" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="room_name" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="room_name_sort" type="string_ci" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
-    <field name="room_name_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="room_name_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
     <field name="room_code" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="room_code_sort" type="string_ci" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
-    <field name="room_code_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="room_code_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
     <field name="room_description" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="room_description_sort" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
-    <field name="room_description_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="room_description_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
 
     <field name="project_id" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="project_name" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="project_name_sort" type="string_ci" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
-    <field name="project_name_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
-    <field name="project_code_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="project_name_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
+    <field name="project_code_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
     <field name="project_description" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="project_description_search" type="text_general_edge_ngram" indexed="true" stored="true"
            omitNorms="true" multiValued="true"/>
@@ -63,13 +68,8 @@
     <field name="date_created" type="date" indexed="true" stored="true" omitNorms="true"/>
     <field name="last_update" type="date" indexed="true" stored="true" omitNorms="true"/>
 
-    <field name="status_id" type="int" indexed="true" stored="true" omitNorms="true"/>
-    <field name="status" type="string" indexed="true" stored="true" omitNorms="true"/>
-    <field name="status_search" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
-    <field name="status_sort" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
-
-    <field name="is_active" type="boolean" indexed="true" stored="true" omitNorms="true"/>
-    <field name="is_active_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_standard_product" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_standard_product_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="cmr_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="cmr" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>

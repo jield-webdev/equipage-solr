@@ -84,13 +84,8 @@
     <field name="last_update" type="date" indexed="true" stored="true" omitNorms="true"/>
     <field name="date_expire" type="date" indexed="true" stored="true" omitNorms="true"/>
 
-    <field name="chemical_status_id" type="int" indexed="true" stored="true" omitNorms="true"/>
-    <field name="chemical_status" type="string" indexed="true" stored="true" omitNorms="true"/>
-    <field name="chemical_status_search" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
-    <field name="chemical_status_sort" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
-
-    <field name="chemical_is_active" type="boolean" indexed="true" stored="true" omitNorms="true"/>
-    <field name="chemical_is_active_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="chemical_is_standard_product" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="chemical_is_standard_product_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="is_expired" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_expired_text" type="string" indexed="true" stored="true" omitNorms="true"/>
