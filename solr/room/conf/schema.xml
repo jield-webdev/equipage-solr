@@ -54,6 +54,10 @@
     <field name="has_chemical" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_chemical_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
+    <field name="amount_of_zone_groups" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_zone_groups" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_zone_groups_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
     <field name="amount_of_zones" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_zone" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_zone_text" type="string" indexed="true" stored="true" omitNorms="true"/>
