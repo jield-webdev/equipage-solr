@@ -50,17 +50,17 @@
     <field name="has_equipment" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_equipment_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
-    <field name="amount_of_chemicals" type="int" indexed="true" stored="true" omitNorms="true"/>
-    <field name="has_chemical" type="boolean" indexed="true" stored="true" omitNorms="true"/>
-    <field name="has_chemical_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="amount_of_chemical_containers" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_chemical_containers" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_chemical_containers_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="amount_of_zone_groups" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_zone_groups" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_zone_groups_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="amount_of_zones" type="int" indexed="true" stored="true" omitNorms="true"/>
-    <field name="has_zone" type="boolean" indexed="true" stored="true" omitNorms="true"/>
-    <field name="has_zone_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_zones" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_zones_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="amount_of_trained_users" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="trained_users_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
