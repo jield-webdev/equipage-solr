@@ -40,9 +40,17 @@
 
     <field name="location_id" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="location" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="location_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="location_code" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="location_name" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="location_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="zone_group_id" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="zone_group" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="zone_group_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
+    <field name="zone_group_name" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="zone_group_description" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="zone_group_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="room_id" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="room_name" type="string" indexed="true" stored="true" omitNorms="true"/>
@@ -83,12 +91,33 @@
     <field name="date_created" type="date" indexed="true" stored="true" omitNorms="true"/>
     <field name="last_update" type="date" indexed="true" stored="true" omitNorms="true"/>
     <field name="date_expire" type="date" indexed="true" stored="true" omitNorms="true"/>
+    <field name="date_marked_for_removal" type="date" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="chemical_is_standard_product" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="chemical_is_standard_product_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="is_expired" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_expired_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="status_id" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="status_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="is_active" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_active_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="is_marked_for_removal" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_marked_for_removal_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="is_deleted" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_deleted_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="amount_of_users" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_users" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="amount_of_active_users" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_active_users" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="amount_of_inactive_users" type="int" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_inactive_users" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+
 
     <uniqueKey>id</uniqueKey>
 
