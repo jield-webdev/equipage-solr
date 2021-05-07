@@ -28,6 +28,10 @@
     <field name="description_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="description_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
+    <field name="cas_number" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="cas_number_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
+    <field name="cas_number_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
+
     <field name="main_chemical_id" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="main_chemical" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="main_chemical_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
