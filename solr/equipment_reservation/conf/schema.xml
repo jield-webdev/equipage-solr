@@ -64,15 +64,15 @@
     <field name="room_code_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="room_code_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
-    <field name="category_id" type="int" indexed="true" stored="true" omitNorms="true"/>
-    <field name="category" type="string" indexed="true" stored="true" omitNorms="true"/>
-    <field name="category_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
-    <field name="category_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
+    <field name="category_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="category" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="category_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
 
-    <field name="type_id" type="int" indexed="true" stored="true" omitNorms="true"/>
-    <field name="type" type="string" indexed="true" stored="true" omitNorms="true"/>
-    <field name="type_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
-    <field name="type_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
+    <field name="type_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="type" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+    <field name="type_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"
+           multiValued="true"/>
 
     <field name="trained_users_id" type="int" indexed="true" stored="true" multiValued="true"/>
     <field name="trained_users_name" type="string" indexed="true" stored="true" multiValued="true"/>
@@ -81,6 +81,9 @@
 
     <field name="recurring" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="recurring_name" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_block_reservation" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="is_block_reservation_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="block_reservation_id" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_recurring" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_recurring_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
