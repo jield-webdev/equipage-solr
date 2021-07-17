@@ -47,11 +47,13 @@
 
     <field name="site_id" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="site" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="site_code" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="site_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="site_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="building_id" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="building" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="building_code" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="building_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="building_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
