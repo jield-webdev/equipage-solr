@@ -131,6 +131,7 @@
     <field name="has_users" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="amount_of_active_users" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_active_users" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_active_users_text" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="amount_of_inactive_users" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="has_inactive_users" type="boolean" indexed="true" stored="true" omitNorms="true"/>
 
