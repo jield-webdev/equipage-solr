@@ -87,6 +87,9 @@
     <field name="is_standard_product" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_standard_product_text" type="string" indexed="true" stored="true" omitNorms="true"/>
 
+    <field name="has_cmr" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="has_cmr_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
     <field name="cmr_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="cmr" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="cmr_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"

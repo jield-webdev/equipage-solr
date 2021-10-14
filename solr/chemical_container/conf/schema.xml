@@ -33,6 +33,10 @@
     <field name="chemical_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="chemical_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
+    <field name="chemical_has_cmr" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="chemical_has_cmr_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="chemical_cmr" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+
     <field name="cas_number" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="cas_number_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="cas_number_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
@@ -123,6 +127,7 @@
 
     <field name="is_marked_for_removal" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_marked_for_removal_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
 
     <field name="is_deleted" type="boolean" indexed="true" stored="true" omitNorms="true"/>
     <field name="is_deleted_text" type="string" indexed="true" stored="true" omitNorms="true"/>
