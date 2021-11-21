@@ -6,6 +6,8 @@ LABEL org.opencontainers.image.source="https://github.com/jield-webdev/equipage-
 USER solr
 RUN mkdir -p /var/solr/index
 
+VOLUME /var/solr/index
+
 ADD --chown=solr:solr solr/building /var/solr/data/building
 ADD --chown=solr:solr solr/chemical /var/solr/data/chemical
 ADD --chown=solr:solr solr/chemical_container /var/solr/data/chemical_container
