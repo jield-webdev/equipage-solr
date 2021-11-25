@@ -2,11 +2,7 @@ FROM solr:latest
 LABEL maintainer="info@jield.nl"
 LABEL org.opencontainers.image.source="https://github.com/jield-webdev/equipage-solr/solr"
 
-#Create a dedicated solr data folder (and use a volume for this)
-USER solr
-RUN mkdir -p /var/solr/index
-
-VOLUME /var/solr/index
+ENV SOLR_OPTS="-XX:-UseLargePages"
 
 ADD --chown=solr:solr solr/building /var/solr/data/building
 ADD --chown=solr:solr solr/chemical /var/solr/data/chemical
