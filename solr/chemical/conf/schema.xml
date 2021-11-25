@@ -144,6 +144,8 @@
     <field name="cmr_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="cmr" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
 
+    <field name="cmr_search" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
+
     <field name="amount_of_role_users" type="int" indexed="true" stored="true" omitNorms="true"/>
     <field name="role_users_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="role_users_name" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
