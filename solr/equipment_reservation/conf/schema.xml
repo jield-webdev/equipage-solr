@@ -105,12 +105,12 @@
     <copyField source="building" dest="building_sort" />
     <copyField source="building" dest="building_search" />
 
-    <field name="building_code" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="building_code"     type="string"   indexed="true" stored="true" omitNorms="true"/>
     <field name="building_code_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="building_code_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
 
-    <copyField source="building_code" dest="building_code_sort" />
-    <copyField source="building_code" dest="building_code_search" />
+<!--    <copyField source="building_code" dest="building_code_sort" />-->
+<!--    <copyField source="building_code" dest="building_code_search" />-->
 
     <field name="category_id" type="int" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
     <field name="category" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>

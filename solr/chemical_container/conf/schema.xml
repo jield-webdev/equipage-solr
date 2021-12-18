@@ -168,6 +168,7 @@
     <field name="concentration" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="concentration_sort" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="concentration_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
+
     <copyField source="concentration" dest="concentration_sort"/>
     <copyField source="concentration" dest="concentration_search"/>
 
