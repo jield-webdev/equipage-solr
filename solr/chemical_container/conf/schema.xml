@@ -46,6 +46,12 @@
     <field name="chemical_has_cmr_text" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="chemical_cmr" type="string" indexed="true" stored="true" omitNorms="true" multiValued="true"/>
 
+    <field name="chemical_is_halogenated" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="chemical_is_halogenated_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
+    <field name="chemical_contains_metals" type="boolean" indexed="true" stored="true" omitNorms="true"/>
+    <field name="chemical_contains_metals_text" type="string" indexed="true" stored="true" omitNorms="true"/>
+
     <field name="cas_number" type="string" indexed="true" stored="true" omitNorms="true"/>
     <field name="cas_number_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
     <field name="cas_number_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
