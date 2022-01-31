@@ -77,6 +77,13 @@
     <copyField source="location_name" dest="location_name_sort" />
     <copyField source="location_name" dest="location_name_search" />
 
+    <field name="sub_location" type="string" indexed="true" stored="true" omitNorms="true"/>
+    <field name="sub_location_sort" type="string_ci" indexed="true" stored="true" omitNorms="true"/>
+    <field name="sub_location_search" type="text_general_edge_ngram" indexed="true" stored="true" omitNorms="true"/>
+
+    <copyField source="sub_location" dest="sub_location_sort"/>
+    <copyField source="sub_location" dest="sub_location_search"/>
+
     <field name="zone_group_id" type="int" indexed="true" stored="true" omitNorms="true"/>
 
     <field name="zone_group_name" type="string" indexed="true" stored="true" omitNorms="true"/>
